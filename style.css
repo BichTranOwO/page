@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    margin-left: 40px;
+}
+
+a,
+p,
+h2,
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    flex: 1;
+    display: block;
+    align-items: center;
+}
+
+a:hover {
+    display: block;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(217, 224, 224);
+    font-size: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.item {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    align-items: center;
+}
+
+.item:hover {
+    background-color: rgb(155, 149, 149);
+}
+
+.banner {
+    background-image: url(img/banconnghe.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 395px;
+    margin: 46px;
+    margin-left: 20px;
+    margin-left: -70px;
+    width: 1435px;
+    align-items: center;
+    object-fit: contain;
+    filter: drop-shadow(0 0 7px blue);
+    color: white;
+    border-radius: 15px;
+}
+
+.banner:hover {
+    filter: drop-shadow(0 0 15px rgb(0, 0, 255));
+
+}
+
+.bcn h2 {
+    padding-top: 300px;
+    margin-left: 39px;
+    text-transform: uppercase;
+    text-shadow: 15px 9px 11px rgba(50, 131, 212, 0.451);
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(to left, #007bff 10%, #00bcd4 50%, #2196F3 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 1.5s linear infinite;
+    display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.bcn .tv {
+    margin-left: 39px;
+    text-shadow: 2px 2px 2px #3626e2;
+    font-size: 20px;
+}
+
+.section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+
+}
+
+.card {
+    width: 284px;
+    height: 360px;
+    margin-left: 13px;
+    border: none;
+    margin-bottom: 50px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.anhnen {
+	position: relative;
+    overflow: hidden;
+}
+.anhnen::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.anhnen:hover::before {
+	-webkit-animation: shine 2s;
+	animation: shine 2s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+
+
+
+.card-body {
+    background-color: #D9D9D9;
+}
+
+.search {
+    width: 595px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    flex: 1;
+
+}
+
+.search:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.search .icon_1 {
+    position: absolute;
+    color: #000000;
+    font-size: 20px;
+    margin-left: 17px;
+    margin-top: 11px;
+    z-index: 1;
+}
+
+.search input#search {
+    width: 595px;
+    height: 50px;
+    background: #d9d9d9;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    border-radius: 5px;
+}
+
+.thanhvien {
+    width: 290px;
+    height: 1040px;
+    background-color: #D9D9D9;
+    margin-left: 13px;
+    margin-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.content {
+    padding: 10px;
+    font-size: 27px;
+    margin-left: 40px;
+}
+
+.title_1 {
+    font-weight: 900;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.player {
+    padding-bottom: 40px;
+}
+.player:hover{
+    transform: scale(1.03);
+}
+
+.container-2 {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.item-2 {
+    background-color: #D9D9D9;
+    width: 595px;
+    height: 675px;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-radius: 2px;
+}
+
+.post {
+    font-size: 25px;
+    padding: 10px;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+.noidung {
+    font-size: 17.3px;
+    margin: -10px 30px 0px 30px;
+
+}
+
+.animation {
+    view-timeline: --subjectReveal block;
+    animation-timeline: --subjectReveal;
+
+    animation-name: appear;
+    animation-range: entry 10% contain 25%;
+    animation-fill-mode: both;
+    animation-duration: 1ms;
+    /* Firefox requires this to apply the animation */
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.container-3 {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.filenoibo {
+    height: 80px;
+    width: 250px;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.filenoibo:hover {
+    box-shadow: rgba(130, 130, 130, 0.4) 5px 5px, rgba(154, 153, 153, 0.3) 10px 10px, rgba(108, 102, 105, 0.2) 15px 15px, rgba(233, 229, 229, 0.1) 20px 20px, rgba(185, 184, 184, 0.05) 20px 20px;
+    transform: scale(1.07);}
+
+.icon_2 {
+    padding-left: 30px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.item_1 .filenoibo .p {
+    padding: 50px;
+    margin-left: 100px;
+
+}
+
+.item-4 {
+    background-color: #FFFFFF;
+
+    height: 80px;
+    width: 250px;
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.item-4:hover {
+    box-shadow: rgba(140, 139, 140, 0.4) 5px 5px, rgba(83, 80, 82, 0.3) 10px 10px, rgba(88, 83, 86, 0.2) 15px 15px, rgba(56, 56, 56, 0.1) 20px 20px, rgba(62, 62, 62, 0.05) 20px 20px;
+    transform: scale(1.05);
+}
+
+.item-4 .thong-tin {
+    font-size: 24px;
+    margin: 10px;
+    box-shadow: rgba(26, 24, 24, 0.05) 0px 2px 2px 0px;
+
+}
+
+/* footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(217, 224, 224);
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+} */
