@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@739&family=Sixtyfour+Convergence:SCAN,XELA,YELA@5,35,29&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -26,7 +28,17 @@ h3 {
 a:hover {
     display: block;
 }
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 750;
+    font-style: normal;
+    font-size: 45px;
+    padding-left:15px;
+    color: rgb(19, 39, 195);
+    text-shadow: 0 1px #808d93, -1px 0 #cdd2d5, -1px 2px #808d93, -2px 1px #cdd2d5, -2px 3px #808d93, -3px 2px #cdd2d5, -3px 4px #808d93, -4px 3px #cdd2d5, -4px 5px #808d93, -5px 4px #cdd2d5, -5px 6px #808d93, -6px 5px #cdd2d5, -6px 7px #808d93, -7px 6px #cdd2d5, -7px 8px #808d93, -8px 7px #cdd2d5, 5px -5px 2px rgba(206,89,55,0.07);
 
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -51,13 +63,13 @@ a:hover {
     background-image: url(img/banconnghe.jpeg);
     background-size: cover;
     background-position: center;
+     object-fit: contain;
     height: 395px;
     margin: 46px;
     margin-left: 20px;
     margin-left: -70px;
     width: 1435px;
     align-items: center;
-    object-fit: contain;
     filter: drop-shadow(0 0 7px blue);
     color: white;
     border-radius: 15px;
@@ -325,11 +337,11 @@ a:hover {
 
 }
 
-/* footer {
+footer {
     width: 100%;
     height: 100px;
     background-color: rgb(217, 224, 224);
     text-align: center;
     align-items: center;
     padding: 10px;
-} */
+}
