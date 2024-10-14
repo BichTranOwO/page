@@ -67,9 +67,11 @@ a:hover {
     background-position: center;
     object-fit: contain;
     height: 395px;
-    margin: 46px;
-    margin-left: -70px;
-    width: 1435px;
+    margin: 46px 0px 46px 0px;
+    /* margin-left: -70px; */
+    margin-left: -5%;
+    margin-right: -10%;
+    width: 110%;
     align-items: center;
     filter: drop-shadow(0 0 7px blue);
     color: white;
@@ -88,7 +90,7 @@ a:hover {
     text-shadow: 15px 9px 11px rgba(50, 131, 212, 0.451);
     font-size: 30px;
     font-weight: 700;
-    background: linear-gradient(to left, #007bff 10%, #00bcd4 50%, #2196F3 60%);
+    background: linear-gradient(to left, #007bff 10%, #00bcd4 50%, rgb(147, 196, 255) 60%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -117,12 +119,13 @@ a:hover {
     padding-top: 20px;
     justify-items: center;
     margin-left: 1%;
-    margin-right: 10%;
+    margin-right: 5%;
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     margin-top: 20px;
     gap: 28px;
     justify-content: space-between;
+
 }
 
 .card {
@@ -191,11 +194,9 @@ a:hover {
     vertical-align: middle;
     white-space: nowrap;
     position: relative;
-    flex: 1;
-
 }
 
-.search:hover {
+.search input#search:hover {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
